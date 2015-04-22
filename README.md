@@ -5,6 +5,7 @@
 pip install pyserial
 ```
 Then use the OS to pair with the HC-06 Bluetooth shield.
+After you have succesfully paired with the device, run
 ```shell
 python -m serial.tools.list_ports
 ```
