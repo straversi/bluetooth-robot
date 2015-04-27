@@ -36,4 +36,5 @@ def convertToDict(jsons):
 	# jsons is now a python dict.
 	return jsons
 
-main()
+if __name__ == "__main__":
+	main()
