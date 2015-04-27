@@ -15,6 +15,9 @@ stocks = {}
 changePercent = {}
 
 def main():
+	update()
+
+def update():
 	for symbol in symbols:
 		request = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=' + symbol + '&callback=convertToDict'
 		company = requestCompany(request)
