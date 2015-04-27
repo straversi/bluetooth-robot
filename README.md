@@ -25,3 +25,14 @@ You may now use commands such as
 ser.write('1')
 ser.readline()
 ```
+
+
+## stocks.py
+
+Add a company symbol to `symbols` to include it in the search results.
+
+Here is an example of changePercent after running main()
+```python
+>>> changePercent
+{'AAPL': 1.76542830825914, 'NFLX': 1.79174240457024, 'GOOG': -1.49391625701634}
+```
