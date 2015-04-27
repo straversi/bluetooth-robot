@@ -9,12 +9,13 @@ The second dictionary will be filled with
 the purposes of this project.
 """
 
-stocks = {"AAPL":{}, "NFLX":{}}
+symbols = ["AAPL", "NFLX", "GOOG"]
 
+stocks = {}
 changePercent = {}
 
 def main():
-	for symbol in stocks.keys():
+	for symbol in symbols:
 		request = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=' + symbol + '&callback=convertToDict'
 		company = requestCompany(request)
 		# Store all of this imformation just in case.
