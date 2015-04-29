@@ -1,4 +1,4 @@
-import urllib.request
+import urllib2
 import json
 
 """
@@ -25,11 +25,12 @@ def update():
 		stocks[symbol] = company
 		# For this project, probably only want one value. Keep this separately.
 		changePercent[symbol] = company["ChangePercent"]
+	return stocks
 
 def requestCompany(request):
-	response = urllib.request.urlopen(request)
+	response = urllib2.urlopen(request)
 
-	str_response = response.readall().decode("utf-8")
+	str_response = response.read().decode("utf-8")
 
 	# evaluation creates call to convertToDict (API specific).
 	my_dict = eval(str_response)
