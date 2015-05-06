@@ -30,13 +30,21 @@ game = [
 	{"hits":0, "runs":0, "on base":0, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
 	{"hits":1, "runs":0, "on base":1, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
 	{"hits":1, "runs":0, "on base":1, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
-	{"hits":1, "runs":1, "on base":0, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
-	{"hits":1, "runs":1, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
-	{"hits":1, "runs":1, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
-	{"hits":1, "runs":1, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":1, "on baseOpp":0, "errorsOpp":0, "winner":None},
-	{"hits":2, "runs":2, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":1, "on baseOpp":0, "errorsOpp":0, "winner":None},
-	{"hits":2, "runs":2, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":1, "on baseOpp":0, "errorsOpp":0, "winner":None},
-	{"hits":2, "runs":2, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":1, "on baseOpp":0, "errorsOpp":0, "winner":"SF"}
+	{"hits":2, "runs":1, "on base":0, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":2, "runs":1, "on base":0, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":2, "runs":1, "on base":0, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":2, "runs":1, "on base":0, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":0, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":1, "runsOpp":0, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":3, "runs":2, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":4, "runs":3, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":4, "runs":3, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":None},
+	{"hits":4, "runs":3, "on base":0, "errors":0, "hitsOpp":2, "runsOpp":2, "on baseOpp":0, "errorsOpp":0, "winner":"SF"}
 ]
 
 if __name__ == "__main__":

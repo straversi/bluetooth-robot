@@ -2,6 +2,9 @@ import stocks as s
 import giants as g
 import serial
 import time
+import sys
+
+thing = ""
 
 def main():
 	ser = serial.Serial('/dev/cu.HC-06-DevB', 9600)
@@ -9,13 +12,16 @@ def main():
 	gameTime = 0
 	gameState = {}
 	lastGameState = g.gameday(0)
-	stocks = s.update()
-	num = stocks["GOOG"]["ChangePercent"]
+	stocks = s.update(thing)
+	num = stocks[thing]["ChangePercent"]
+	done = 0
 	while True:
 		print "updating..."
 		# giants = g.update()
 		if gameTime < len(g.game):
 			gameState = g.gameday(gameTime)
+		else:
+			done += 1
 		print "done."
 		time.sleep(2)
 		gameTime += 1
@@ -47,16 +53,22 @@ def main():
 			ser.write("0")
 
 		# Fifth write is stock change: 0, 1, 2
-		if num < -1:
-			num = 0
-		elif num > 1:
-			num = 2
+		if num < -0.5:
+			actual = 0
+		elif num > 0.5:
+			actual = 2
 		else:
-			num = 1
-		ser.write("%d" % num)
+			actual = 1
+		ser.write("%d" % actual)
 		print lastGameState
 		print gameState
 		lastGameState = gameState
+		if done == 2:
+			break
 
 if __name__ == '__main__':
+	if len(sys.argv) > 1:	
+		thing = sys.argv[1]
+	else:
+		thing = "GOOG"
 	main()

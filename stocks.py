@@ -17,14 +17,13 @@ changePercent = {}
 def main():
 	update()
 
-def update():
-	for symbol in symbols:
-		request = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=' + symbol + '&callback=convertToDict'
-		company = requestCompany(request)
-		# Store all of this imformation just in case.
-		stocks[symbol] = company
-		# For this project, probably only want one value. Keep this separately.
-		changePercent[symbol] = company["ChangePercent"]
+def update(sym):
+	request = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=' + sym + '&callback=convertToDict'
+	company = requestCompany(request)
+	# Store all of this imformation just in case.
+	stocks[sym] = company
+	# For this project, probably only want one value. Keep this separately.
+	changePercent[sym] = company["ChangePercent"]
 	return stocks
 
 def requestCompany(request):
